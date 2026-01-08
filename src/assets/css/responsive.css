@@ -1,0 +1,124 @@
+@media screen and (max-width: 1300px) {
+    body{
+        min-width: 1000px;
+    }
+    .main-content, 
+    .navigation {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body{
+        min-width: 750px;
+    }
+    .main-content{
+        width: 100%;
+    }
+    .navigation{
+        width: 100%;
+        margin-top: 0;
+        border-bottom:solid 1px #bdc3c7;
+    }
+    .base-card{
+        box-shadow: none;
+        border-radius: 0;
+    }
+    .schedules .base-card,
+    .passengers .base-card,
+    .trains .base-card {
+        border-top:solid 1px #bdc3c7;
+        border-bottom:solid 1px #bdc3c7;
+        margin-top: 5px;
+    }
+    .schedules > .base-button:first-child,
+    .passengers > .base-button:first-child,
+    .trains > .base-button:first-child{
+        margin-left: 5px;
+    }
+    .base-table,
+    .base-table tbody,
+    .base-table th,
+    .base-table td{
+        display: block;
+    }
+    .base-table tr{
+        display: block;
+        margin-top: 30px;
+    }
+    .base-table thead{
+        display: none;
+    }
+    .trains .base-table td{
+        display: flex;
+        justify-content:space-between;
+        column-gap: 20px;
+    }
+    .base-table tbody tr:last-child td{
+        border-bottom: #16a085 solid 1px;
+    }
+    .base-table tbody tr:last-child td:first-child{
+        border-bottom: none;
+    }
+    .trains .base-table td::before{
+        color: #16a085;
+        font-weight: bold;
+    }
+    .trains .base-table td:nth-child(2)::before{
+        content: 'Code';
+    }
+    .trains .base-table td:nth-child(3)::before{
+        content: 'Name';
+    }
+    .trains .base-table td:nth-child(4)::before{
+        content: 'Max Passengers';
+    }
+    .trains .base-table td:nth-child(5)::before{
+        content: 'Description';
+    }
+}
+
+@media screen and (max-width: 840px) {
+    body{
+        min-width: 400px;
+    }
+    .navigation{
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .double-column{
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .base-button{
+        font-size: 12px;
+        border-radius: 4px;
+        height: 28px;
+        padding: 0 8px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    body{
+        min-width: 340px;
+    }
+    .base-textbox{
+        width: 160px;
+    }
+    .base-datepicker{
+        width: 163px;
+    }
+    .base-dropbox{
+        width: 166px;
+    }
+    .base-searchbox{
+        width: 166px;
+    }
+    .base-textarea{
+        width: 160px;
+    }
+    .title{
+        font-size: 18px;
+    }
+}
